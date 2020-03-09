@@ -1,0 +1,129 @@
+            // $id_user            = $this->input->post('id_user');
+            // $nama               = $this->input->post('nama');
+            // $bulan              = $this->input->post('bulan');
+            // $nominal            = $this->input->post('nominal');
+            // $nomor_rekening     = $this->input->post('nomor_rekening'); 
+            // $bukti_Pembayaran   = $_FILES['bukti_pembayaran'];
+            // if($bukti_Pembayaran=''){}else{
+            //     $config['upload_path'] = './assets/img';
+            //     $config['allowed_types'] = 'jpg|png|jpeg|gif';
+
+            //     $this->load->library('upload', $config);
+            //     if(!$this->upload->do_upload('bukti_pembayaran')){
+            //         echo "Gagal Upload";
+            //         die();
+            //     }else{
+            //         $bukti_Pembayaran = $this->upload->data('file_name');
+            //     }
+            // }
+
+            // $data = array(
+            //   'id_user'             => $id_user,
+            //    'nama'               => $nama,
+            //    'bulan'              => $bulan,
+            //    'nominal'            => $nominal,
+            //    'nomor_rekening'     => $nomor_rekening,
+            //    'bukti_Pembayaran'   => $bukti_Pembayaran
+            );
+
+<!-- Main Content -->
+<div id="content">
+
+  <!-- Topbar -->
+  <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+    <!-- Sidebar Toggle (Topbar) -->
+    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+      <i class="fa fa-bars"></i>
+    </button>
+    </form>
+
+    <!-- Topbar Navbar -->
+    <ul class="navbar-nav ml-auto">
+
+      <div class="topbar-divider d-none d-sm-block"></div>
+
+    </ul>
+
+  </nav>
+  <!-- End of Topbar -->
+
+
+          <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <h1 class="h3 mb-2 text-gray-800">Profile</h1>
+          
+          <!-- DataTales Example -->
+          <div class="row">
+            <div class="col-md-5">
+              <div class="card shadow mb-4">
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Nama</label>
+                      <input type="text" class="form-control" name="nama" value="<?= $profile['nama'] ?>">
+                    </div>
+                
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="card shadow mb-4">
+              <div class="form-group">
+                            <label for="formGroupExampleInput2">Tempat Lahir</label>
+                            <input type="text" class="form-control" name="tempat_lahir" value="<?= $profile['tempat_lahir'] ?>">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Tanggal Lahir</label>
+                            <input type="text" class="form-control" name="tanggal_lahir" value="<?= $profile['tanggal_lahir'] ?>">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Jenis kelamin</label>
+                            <input type="text" class="form-control" name="jenis_kelamin" value="<?= $profile['jenis_kelamin'] ?>">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Agama</label>
+                            <input type="text" class="form-control" name="agama" value="<?= $profile['agama'] ?>">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Alamat</label>
+                            <input type="text" class="form-control" name="alamat" value="<?= $profile['alamat'] ?>">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">No Hp</label>
+                            <input type="text" class="form-control" name="nomor_hp" value="<?= $profile['nomor_hp'] ?>">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Nama Ibu</label>
+                            <input type="text" class="form-control" name="nomor_hp" value="<?= $profile['nama_ibu'] ?>">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Alamat Ibu</label>
+                            <input type="text" class="form-control" name="nomor_hp" value="<?= $profile['alamat_ibu'] ?>">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">No Hp Ibu</label>
+                            <input type="text" class="form-control" name="nomor_hp" value="<?= $profile['nomor_hpibu'] ?>">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">No Rekening Ibu</label>
+                            <input type="text" class="form-control" name="nomor_hp" value="<?= $profile['nomor_rekeningibu'] ?>">
+                        </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content
+
+
+                  <select name="status" class="form-control">
+                      <option value=""><?= $data->status ?></option>
+                      <option>Lunas</option>
+                      <option>Ditolak</option>
+                  </select>
+
+                  <?= base_url('KepalaSekolah/AksiUbahCekPengajuan') ?>
